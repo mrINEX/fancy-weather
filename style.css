@@ -1,0 +1,322 @@
+body {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: smaller;
+}
+
+iframe {
+    border: 0;
+}
+
+.background {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 880px;
+    height: 500px;
+    background: rgba(7, 7, 7, 0.733);
+    margin: 12px auto;
+}
+
+.controls {
+    display: -webkit-inline-box;
+    padding: 15px;
+}
+
+.wrapperForWeather {
+    height: 90%;
+    padding: 2%;
+}
+
+.geodata {
+    width: 250px;
+    height: 300px;
+    left: 68%;
+    text-align: -webkit-right;
+    position: relative;
+    bottom: 80%;
+}
+
+.maps {
+    width: 250px;
+    height: 250px;
+    border-radius: 30px 30px 0 30px;
+}
+
+.today {
+    width: 100%;
+    height: 63%;
+}
+
+.tothreedays {
+    width: 100%;
+    display: inline-flex;
+}
+
+.switch {
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    background: url('./img/refresh.png'), rgb(128, 128, 128, 0.3);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.refresh {
+    background: url('./img/Vector.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+}
+.refresh:hover {
+    animation: 0.5s infinite alternate opacit;
+}
+
+.refreshRotate {
+    background: url('./img/Vector.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    animation: 1s infinite rotat;
+}
+
+@keyframes rotat {
+    from {
+        transform: rotate(0deg);
+    }
+    
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.language {
+    width: 80px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: rgba(128, 128, 128, 0.5);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+    padding: 0 15px;
+    cursor: pointer;
+    border: 0;
+    margin: 0 20px;
+}
+
+.language:hover {
+    animation: 1s infinite alternate colorChange;
+}
+
+.wrappfc {
+    display: -webkit-box;
+    border-radius: 7px;
+    background-color: rgba(128, 128, 128, 0.493);
+}
+
+.wrappersearch {
+    height: 40px;
+    margin: 0 0 0 100%;
+    border-radius: 7px;
+    display: inline-flex;
+    background: rgb(128, 128, 128, 0.42);
+}
+
+.fahrenheit {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.fahrenheit:hover {
+    animation: 1s infinite alternate colorChange;
+}
+
+.celsius {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.celsius:hover {
+    animation: 1s infinite alternate colorChange;
+}
+
+.searchcityinput {
+    color: white;
+    border-radius: 7px 0 0 7px;
+    border: 0;
+    padding: 10px;
+    background: rgba(128, 128, 128, 0);
+}
+
+::placeholder {
+    font-family: Montserrat;
+    color: white;
+}
+
+.searchcityclick {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 0 7px 7px 0;
+    border: 0;
+    background: linear-gradient(to top, #f8f3fba1, #f5f4f0cc);
+    cursor: pointer;
+}
+
+.searchcityclick:hover {
+    animation: 1s infinite alternate colorChange;
+}
+
+@keyframes colorChange {
+    from {
+        color: #FFFFFF;
+    }
+    50% {
+        color: rgb(20, 177, 143);
+    }
+    to {
+        color: #333;
+    }
+}
+
+.degreeC,
+.degreeF {
+    display: -webkit-inline-box;
+    padding: 30%;
+}
+
+.latitude,
+.longitude {
+    display: block;
+}
+
+.cityCountry {
+    font-size: 30px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    text-shadow: black 0 0 3px;
+}
+
+.date {
+    font-size: large;
+    position: relative;
+    z-index: 1;
+}
+
+.time {
+    font-size: large;
+    padding: 4%;
+    position: relative;
+    z-index: 1;
+}
+
+.temp {
+    font-size: 170px;
+    display: block;
+}
+
+.imgWeather {
+    position: relative;
+    left: 320px;
+    width: 150px;
+    bottom: 280px;
+    background-color:#ffffff61;
+    border-radius: 30%;
+}
+
+.imgVoice {
+    height: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+.imgVoice:hover {
+    animation: 0.5s infinite alternate opacit;
+}
+@keyframes opacit {
+    from {
+        opacity: 100%;
+    }
+    
+    to {
+        opacity: 30%;
+    }
+}
+
+.description {
+    position: relative;
+    left: 320px;
+    bottom: 255px;
+    text-shadow: black 0 0 3px;
+}
+
+.summaryWeather,
+.apparentTemp,
+.windSpeed,
+.humidity {
+    display: block;
+    font-size: larger;
+}
+
+.wrapperTomorrom {
+    width: 23%;
+}
+
+.day0,
+.day1,
+.day2,
+.temp0,
+.temp1,
+.temp2 {
+    display: block;
+    z-index: 3;
+    position: relative;
+    text-shadow: black 0 0 3px;
+}
+
+.day0,
+.day1,
+.day2 {
+    font-size: large;
+}
+
+.temp0,
+.temp1,
+.temp2 {
+    font-size: 45px;
+}
+
+.iconWeather0,
+.iconWeather1,
+.iconWeather2 {
+    position: relative;
+    z-index: 1;
+    bottom: 75px;
+    left: 40px;
+    background-color: #ffffff61;
+    border-radius: 30%;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('./img/selecticon.png');
+    background-repeat: no-repeat;
+    background-position-x: 51px;
+    background-position-y: 17px;
+    background-size: 15%;
+ }
