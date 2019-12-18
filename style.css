@@ -314,7 +314,7 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-image: url('./img/selecticon.png');
+    background-image: url('\./img/selecticon.png');
     background-repeat: no-repeat;
     background-position-x: 51px;
     background-position-y: 17px;
