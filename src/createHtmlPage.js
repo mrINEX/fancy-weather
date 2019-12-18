@@ -52,7 +52,7 @@ function createHtmlElements() {
   nav.append(buttonSearch);
   const inputSearch = createElement('input', 'searchcityinput');
   const imgVoice = createElement('img', 'imgVoice');
-  imgVoice.setAttribute('src', '\./img/voiceicon.png');
+  imgVoice.setAttribute('src', './img/voiceicon.png');
   inputSearch.setAttribute('placeholder', 'Search city');
   inputSearch.setAttribute('type', 'text');
   const inputSubmit = createElement('input', 'searchcityclick');
