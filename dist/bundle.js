@@ -170,7 +170,7 @@ eval("const URL_API = 'https://api.opencagedata.com/';\nconst KEY = '12ff4fe1ac8
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("function speechInput() {\n  window.SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;\n  const recognition = new window.SpeechRecognition();\n  recognition.interimResults = true;\n  recognition.maxAlternatives = 10;\n  recognition.onresult = (event) => {\n    const speechToText = event.results[0][0].transcript;\n    document.querySelector('.searchcityinput').value = speechToText;\n  };\n  recognition.start();\n}\n\nmodule.exports = {\n  speechInput,\n};\n\n\n//# sourceURL=webpack:///./src/speech.js?");
+eval("function speechInput() {\n  window.SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;\n  const recognition = new window.SpeechRecognition();\n  recognition.interimResults = true;\n  recognition.maxAlternatives = 10;\n  const storageLanguage = localStorage.getItem('language');\n  recognition.lang = storageLanguage;\n  recognition.onresult = (event) => {\n    const speechToText = event.results[0][0].transcript;\n    document.querySelector('.searchcityinput').value = speechToText;\n  };\n  recognition.start();\n}\n\nmodule.exports = {\n  speechInput,\n};\n\n\n//# sourceURL=webpack:///./src/speech.js?");
 
 /***/ }),
 
